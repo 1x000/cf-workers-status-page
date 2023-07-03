@@ -26,7 +26,7 @@ monitors:
 
   - id: jigou-daohang
     name: 纪狗导航
-    description: '没有什么用的导航.'
+    description: '专注纪狗的导航.'
     url: 'https://jigou.xpdbk.com'
     method: GET
     expectStatus: 200
