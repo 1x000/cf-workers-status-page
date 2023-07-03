@@ -1,24 +1,24 @@
 settings:
-  title: 'Status Page'
-  url: 'https://status-page.eidam.dev' # used for Slack messages
-  logo: logo-192x192.png # image in ./public/ folder
-  daysInHistogram: 90 # number of days you want to display in histogram
-  collectResponseTimes: true # collects avg response times from CRON locations
+  title: 'LF网站状态'
+  url: '' # 用于 Slack 消息
+  logo: logo-192x192.png # 图片在 ./public/ 文件夹中
+  daysInHistogram: 90 # 要在柱状图中显示的天数
+  collectResponseTimes: true # 从 CRON 位置收集平均响应时间
 
-  allmonitorsOperational: 'All Systems Operational'
-  notAllmonitorsOperational: 'Not All Systems Operational'
-  monitorLabelOperational: 'Operational'
-  monitorLabelNotOperational: 'Not Operational'
-  monitorLabelNoData: 'No data'
-  dayInHistogramNoData: 'No data'
-  dayInHistogramOperational: 'All good'
-  dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
+  allmonitorsOperational: '所有系统正常运行'
+  notAllmonitorsOperational: '不是所有系统都正常运行'
+  monitorLabelOperational: '正常运行'
+  monitorLabelNotOperational: '未运行'
+  monitorLabelNoData: '无数据'
+  dayInHistogramNoData: '无数据'
+  dayInHistogramOperational: '一切正常'
+  dayInHistogramNotOperational: '个事件记录' # 记录了 xx 个事件
 
 monitors:
-  - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
-    description: 'You write code. They handle the rest.' # default=empty
-    url: 'https://workers.cloudflare.com/' # URL to fetch
+  - id: main-blog-lel_feng # unique identifier
+    name: 主要博客
+    description: '平时写写文章.' # default=empty
+    url: 'https://blog.xpdbk.com/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
