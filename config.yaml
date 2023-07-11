@@ -16,13 +16,11 @@ settings:
 
 monitors:
   - id: main-blog-lel_feng # unique identifier
-    name: 主要博客
-    description: '平时写写文章.' # default=empty
+    name: 主博客
+    description: '写好了满意的文章会在这里发布.' # default=empty
     url: 'https://blog.xpdbk.com/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
 
   - id: jigou-daohang
     name: 纪狗导航
@@ -30,10 +28,10 @@ monitors:
     url: 'https://jigou.xpdbk.com'
     method: GET
     expectStatus: 200
-    linkable: false # allows the title to be a link, default=true
 
   - id: mc-server-fans
     name: MC粉丝服
+    description: '专注纪狗的导航.'
     url: 'https://mc.xpdbk.com/'
     method: GET
     expectStatus: 200
